@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>demmande</title>
+	<link rel="stylesheet" type="text/css" href="css/fiche_demande_inter.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+
+  <div class="box_dem">
+    <div class= "form_groupe">
+  	<h2>Lieu :</h2>
+  	<label for="site">site :</label>
+  	<input type="text" name="site" placeholder="votre site ..."><br>
+  	<label for="bureau">bureau</label>
+  	<input type="text" name="bureau" placeholder="votre bureau..."> <br>
+  	<label for="matriel">num serie matriel :</label>
+  	<input type="text" name="matriel" placeholder="num serie matriel"><br>
+  	<label for="probleme">probleme</label>
+  	<select name="probleme">
+  		<option>probleme soft</option>
+  		<option>probleme hard</option>
+  		<option>probleme reseau</option>
+  	</select><br>
+  	<label for="dec_pro"> detail du probleme rencontre :
+  	</label><br><br>
+  	<textarea rows="10" cols="50" name="dec_pro" placeholder="description de probleme .....">
+      </div>
+  		
+  	</textarea>
+
+    
+        <button type="submit" class="btn btn-danger" name= "submit">annuler</button>
+        <button type="submit" class="btn btn-success" name= "submit">valider</button>
+
+      
+    </div>
+
+  	
+  </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+body{
+background-color: rgba(154, 150, 116, 0.75);
+     background-size: cover;
+     font-family: Arial;
+}
+.box_dem{
+	width: 350px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: black;
+  background-color: white;
+  padding: 1.5cm;
+    cursor: pointer;
+
+}
+.box_dem h2{
+	 
+	width: 60px;
+  font-size: 20px;
+  border-bottom: 6px solid #FADE51;
+}
+.box_dem label{
+	font-size: 17px;
+	text-decoration: bold;
+}
+.box_dem input{
+	border:none;
+	outline: none;
+	border-radius: 
+}
+.box_dem textarea{
+	border:double;
+}
+.annuler{
+  background-color: blue;
+}
+@media print
+{
+  
+
+
+}

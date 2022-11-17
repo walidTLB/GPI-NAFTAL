@@ -1,0 +1,53 @@
+body{
+	background-size: cover;
+	font-family: Arial;
+}
+.fiche_d{
+	margin:0px 30px 0px 50px;
+
+}
+.header h3{
+	border-style: groove;
+	text-align: center;
+	margin-bottom: 0;
+}
+.header p{
+		text-align: center;
+ margin-top: 0;
+}
+.d_dem input{
+	border:none;
+	outline: none;
+
+}
+.demandeur input{
+	border:none;
+	outline: none;
+}
+.lieu input{
+	border:none;
+	outline: none;
+}
+.matriel input{
+	border:none;
+	outline: none;
+}
+.probleme input{
+	border:none;
+	outline: none;
+}
+ul{
+	margin-left: 25px;
+}
+.detail_probleme textarea {
+	margin-left: 25px;
+}
+.footer{
+			text-align: center;
+
+
+}
+.visa {
+	margin-left: 70px;
+}
+

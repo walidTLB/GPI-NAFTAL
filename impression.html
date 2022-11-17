@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+function printContent(el){
+	var restorepage = document.body.innerHTML;
+	var printcontent = document.getElementById(el).innerHTML;
+	document.body.innerHTML = printcontent;
+	window.print();
+	document.body.innerHTML = restorepage;
+}
+</script>
+</head>
+<body>
+ <div id="t1">
+ 	<p>fgsdhfggd</p>
+ 	<ul>
+ 		<li>fdsfgd</li>
+ 		<li>fdsfgd</li>
+ 		<li>fdsfgd</li><li>fdsfgd</li>
+ 		<li>fdsfgd</li>
+ 	</ul></div>
+ 	<div id="t2">
+ 	<p>fgsdhfggd</p>
+ </div>
+ <input id="impression" name="impression" type="button" onclick="printContent('t1')" value="Imprimer cette page" />
+ <input id="impression" name="impression" type="button" onclick="printContent('t2')" value="Imprimer cette page" />
+ 
+</body>
+</html>

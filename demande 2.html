@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="demande.css">
+</head>
+<body>
+<div class="content">
+    <div class="login-form-container">
+      
+     <div class="login-header">
+        <Title>D E M A N D E</title>
+<meta charset="utf-8"/>
+    <link rel="stylesheet" href="AjoutMT.css"/>
+	<br><br>
+	  <img src="bg.png">
+      <nav>
+	
+<b align="center"> D E M A N D E</b>       
+<p class="titre">Coordonnées</p>
+<form align="center" method="get" action="AjoutMT.php" class="submenu"  name="ajoutMT"  >
+<fieldset id="coordonnees">
+								 <p id="civilite"><label>Civilité : </label>
+												<input type="radio" name="civilite" value="M." />M.
+												<input type="radio" name="civilite" value="Mlle" />Mlle
+												<input type="radio" name="civilite" value="Mme" />Mme
+											  </p>
+								<table align="center" >
+								<tr class="form">
+								 <td height="20">
+								<label>Code:</label>
+								</td>
+								<td>
+								<INPUT TYPE="text" NAME="Num_serie" SIZE="50" MAXLENGTH="50" id="nom-utili" /> 
+								 </td>
+								</tr>
+
+								 <tr class="form">
+								 <td height="20">
+								<label>Nom:</label>
+								</td>
+								<td>
+								<INPUT TYPE="text" NAME="Num_serie" SIZE="50" MAXLENGTH="50" id="nom-utili" /> 
+								 </td>
+								</tr>
+								 <tr class="form">
+								 <td height="20">
+								<label>Prenom:</label>
+								</td>
+								<td>
+								<INPUT TYPE="text" NAME="Num_serie" SIZE="50" MAXLENGTH="50" id="nom-utili" /> 
+								 </td>
+								</tr>
+								
+								<tr class="form">
+								 <td height="20">
+								<label>Service:</label>
+								</td>
+								<td>
+								<INPUT TYPE="text" NAME="Num_serie" SIZE="50" MAXLENGTH="50" id="nom-utili" /> 
+								 </td>
+								</tr>								
+								
+								<tr>
+								 <td height="20">
+								<label>Département:</label>
+								</td>
+								<td>
+								<select name="role">
+												  <option value="finance">finance</option>
+												  <option value="informatique">informatique</option>
+												  <option value="juridique">juridique</option>
+												  <option value="juridique">juridiquehhhhhhhhhhhhhhhhhhhhhhhhhhhh.</option>
+												</select> 
+								 </td>
+								</tr>
+
+								<tr>
+								 <td height="20">
+								<label>Type demande:</label>
+								</td>
+								<td>
+								<select name="pays" >
+												  <option value="france">Réparation </option>
+												  <option value="belgique">Affectation</option>
+												  <option value="suisse">Reforme</option>
+												  <option value="suisse">d'intervention</option>
+												  <option value="suisse">reaffectation</option>
+												  <option value="suisse">restitution</option>
+												  <option value="suisse">prevision</option>
+												  <option value="juridique">juridiquehhhhhhhhhhhhhhhhhhhhhhhhhhhh.</option>
+												</select>
+												
+								 </td>
+								</tr>
+</fieldset>
+</form>
+ <tr><td colspan=2><?php if(isset( $message)) echo $message; ?></td></tr>
+</table>
+</nav>
+<br>
+<p class="titre">Matériel</p> 
+<nav>
+<form align="center" method="get" action="AjoutMT.php" class="submenu"  name="ajoutMT"  >
+<fieldset id="coordonnees">
+								<table align="center" >
+								 <tr class="form">
+								 <td height="20">
+								<label>TYPE:</label>
+								</td>
+								<td>
+								<INPUT TYPE="text" NAME="Num_serie" SIZE="50" MAXLENGTH="50" id="nom-utili" /> 
+								 </td>
+								</tr>
+								 <tr class="form">
+								 <td height="20">
+								<label>MARQUE:</label>
+								</td>
+								<td>
+								<INPUT TYPE="text" NAME="Num_serie" SIZE="50" MAXLENGTH="50" id="nom-utili" /> 
+								 </td>
+								</tr>
+								
+								<tr class="form">
+								 <td height="20">
+								<label>Description:</label>
+								</td>
+								<td>
+								<textarea name="comments" rows="4" cols="52"></textarea>
+								 </td>
+								</tr>
+</fieldset>
+</form>
+<tr>
+ <tr><td colspan=2><?php if(isset( $message)) echo $message; ?></td></tr>
+</table>
+</nav><br>
+ <tr height="40">
+ <td colspan="2">
+   <input type="button" name="imp"  onclick="redirection()" value="Imprimer la demande "  />
+<br>
+
+ </td>
+ </tr>
+<br>
+<td>
+			<div class="form-group">
+             <button class="login-button" id="loginBtn">ENVOYER</button>
+           </div>
+		   </td>
+		   <td>
+           <div class="form-group">
+             <button class="login-button" id="loginBtn">
+			 <a href="index.html">ANNULER</a>
+			 </button>
+           </div>
+ </td>
+</tr>
+</body>
+<html>
+<script language="JavaScript">
+function redirection() {
+document.location.href="imprimeListequip.php";
+}
+</script>
+
+     
+    </div>
+ </div>
+</div>
+<script type="text/javascript">
+	function validateInput(el){
+        var element = el;
+        
+        if (element.value == "") {
+          element.style.border="1px solid red";
+          element.placeholder="i said fill the ******* fooorm"
+        }else{
+          element.style.border="1px solid #fff";
+        }
+
+
+        var username =document.getElementById('username');
+        var password = document.getElementById('password');
+        if(username.value != "" && password.value !="")
+        {
+           document.getElementById('loginBtn').style.fontSize="12px"
+          document.getElementById('loginBtn').innerHTML ="By Order of the peaky blinders <br> you can get in";
+        }else{
+          document.getElementById('loginBtn').style.fontSize="20px"
+          document.getElementById('loginBtn').innerHTML ="sign in" 
+        }
+      }
+
+
+
+
+
+
+</body>
+</html>
